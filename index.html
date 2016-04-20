@@ -1,23 +1,222 @@
----
-layout: default
----
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jeremy Garza</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <script>src="assets/js/bootstrap-3.3.6-dist2"</script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.3.0/font-mfizz.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
 
-<div class="home">
+			<!-- Header -->
+      <div class='hover'>
+				<header id="header" class="hover">
+					<h1 id="logo"><a href="index.html">Ranger</a></h1>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li>
+								<a href="#one">About</a>
+							</li>
+							<li><a href="#four">Skills</a></li>
+							<li><a href="#five" class="button special">Contact</a></li>
+						</ul>
+					</nav>
+				</header>
+      </div>
+			<!-- Banner -->
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>Jeremy Garza</h2>
+							<p>Enthusiastic Web Developer</p>
+						</header>
+						<span class="image"><img src="images/jeremy-2.png" alt="" /></span>
+					</div>
+				</section>
 
-  <h1 class="page-heading">Posts</h1>
+			<!-- One -->
+				<section id="one" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="images/3rd.jpg" alt="" /></span>
+					<div class="content">
+						<div class="container">
+							<div class="row">
+								<div class="4u 12u$(medium)">
+									<header>
+										<h2>About Me</h2>
+									</header>
+								</div>
+								<div class="4u 12u$(medium)">
+									<p>My previous career was the Military. I spent 12 years on Active duty in the Army. Almost 10 years of that time was spent in a Special Operations Unit which is known as 75th Ranger Regiment. I ended my term of service in January 2015 but am currently in the Texas National Guard.</p>
+								</div>
+								<div class="4u$ 12u$(medium)">
+									<p>After I got out of the Army I wanted to go back to school and learn to program. I started taking classes at Austin Community College. I started liking programming what wanted to learn more and do an in depth class. I decided to do a programming bootcamp and went to General Assembly's Web Develpment Immersive course.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+			<!-- Two -->
+				<section id="two" class="spotlight style2 right">
+					<span class="image fit main bottom"><img src="images/bandspy.png" alt="" /></span>
+          <div class="content">
+            <header>
+              <h2>BandSpy</h2>
+            </header>
+            <p>This web app was a team effor in General Assembly. For this project we had 5 days to come up an idea and do as much as we can with that idea using Ruby on Rails. Before this we had three weeks of classes on Ruby using Rails, Senatra and PostgreSQL as our database. The app lets a user sign up for a secure account then lets the user search for thier favorite artists and save them. Then they can see all saved artists and see when they are playing near them and buy tickets. The app uses the Bandsintown API.</p>
+            <ul class="actions">
+              <li><a href="daregame.herokuapp.com" class="button">BandSPy</a></li>
+            </ul>
+          </div>
+				</section>
+			<!-- Three -->
+				<section id="three" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/shameless.png" alt="" /></span>
+					<div class="content">
+            <header>
+              <h2>Almost Shameless</h2>
+            </header>
+            <p>This web app is a project I did with my team. We had four days to come up with an app that would use MongoDB and Node.JS. The app is a dare type game that accepts a user's login through Instagram and verifies the person. A user can shuffle through random dares and can accept a dare and post it to Instagram. It is unfinished but the concept is AWESOME.</p>
+            <ul class="actions">
+              <li><a href="http://daregame.herokuapp.com/" class="button">ALMOST Shameless</a></li>
+            </ul>
+          </div>
+				</section>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+			<!-- Four -->
+				<section id="four" class="wrapper style1 special fade-up">
+					<div class="container">
+						<header class="major">
+							<h2>Web Development Knowledge</h2>
+						</header>
+						<div class="box alt">
+							<div class="row uniform">
+								<section class="4u 6u(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-html5"></span>
+                  <h3>HTML</h3>
+									<p></p>
+								</section>
+								<section class="4u 6u$(medium) 12u$(xsmall)">
+									<span class="icon alt major fa-css3"></span>
+									<h3>CSS</h3>
+									<p></p>
+								</section>
+								<section class="4u$ 6u(medium) 12u$(xsmall)">
+									<span class="icon alt major"><i class="icon-javascript"></i></span>
+									<h3>JAVASCRIPT</h3>
+									<p></p>
+								</section>
+								<section class="4u 6u$(medium) 12u$(xsmall)">
+									<span class="icon alt major"><i class="icon-nodejs"></i></span>
+									<h3>Node.JS</h3>
+									<p></p>
+								</section>
+								<section class="4u 6u(medium) 12u$(xsmall)">
+                  <span class="icon alt major"><i class="icon-ruby-on-rails-alt"></i></span>
+									<h3>Ruby on Rails</h3>
+									<p></p>
+								</section>
+								<section class="4u$ 6u$(medium) 12u$(xsmall)">
+									<span class="icon alt major"><i class="icon-ruby"></i></span>
+									<h3>Ruby</h3>
+									<p></p>
+								</section>
+                <section class="4u 6u(medium) 12u$(xsmall)">
+                  <span class="icon alt major"><i class="icon-mongodb"></i></span>
+                  <h3>MongoDB</h3>
+                  <p></p>
+                </section>
+                <section class="4u$ 6u$(medium) 12u$(xsmall)">
+                  <span class="icon alt major"><i class="icon-python"></i></span>
+                  <h3>Python</h3>
+                  <p></p>
+                </section>
+							</div>
+						</div>
+          <section>
+						<footer class="major">
+							<ul class="actions">
+              <li>
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" id="myBtn">Resume</button>
+              </li>
+                  <div id="myModal" class="modal fade" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                      <img  class="resume" src="images/resume.png">
+                    </div>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+              </ul>
+						</footer>
+					</div>
+				</section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+			<!-- Five -->
+          <section id="five" class="wrapper style1 fade-up">
+            <div class="inner">
+              <h2>Contact</h2>
+              <p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+              <div class="split style1">
+                <section>
+                  <form method="post" action="#">
+                    <div class="field half first">
+                      <label for="name">Name</label>
+                      <input type="text" name="name" id="name" />
+                    </div>
+                    <div class="field half">
+                      <label for="email">Email</label>
+                      <input type="text" name="email" id="email" />
+                    </div>
+                    <div class="field">
+                      <label for="message">Message</label>
+                      <textarea name="message" id="message" rows="5"></textarea>
+                    </div>
+                    <ul class="actions">
+                      <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" class="button submit">Send Message</a></li>
+                    </ul>
+                  </form>
+                </section>
+                <section>
+                  <ul class="contact">
+                    <li>
+                      <h3>Email</h3>
+                      <a href="jdgarza81@gmail.com">jdgarza81@gmail.com</a>
+                    </li>
+                  </ul>
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/jeremygarza" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						<li><a href="https://github.com/jeremygarza" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="mailto:jdgarza81@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
 
-</div>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
