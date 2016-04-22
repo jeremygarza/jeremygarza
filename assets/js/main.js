@@ -300,29 +300,43 @@
 
 })(jQuery);
 
-// Get the modal
-var modal = document.getElementById('myModal');
+// var response = $.ajax({
+//       method: "GET",
+//       url: "http://api.icndb.com/jokes/random?exclude=[explicit]",
+//       value: "type",
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+//     })
+//       .done(function(value) {
+//         // console.log({response});
+//         return (value)
+//       });
+//     console.log(response)
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+//   var chuck = $.ajax({
+//     url: "http://api.icndb.com/jokes/random?exclude=[explicit]",
+//     dataType: 'jsonp',
+//     success: function(results){
+//         var joke = results.value.joke;
+//         $('#results').append(joke);
+//         console.log(joke);
+//     }
+// });
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+    $(document).ready(function(){
+    $('.chuck').click(function(){
+        $.getJSON("http://api.icndb.com/jokes/random?exclude=[explicit]",
+          function(data){
+                var joke = data.value.joke;
+                $("div").append(joke);
+            });
+        });
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
+});
+
+
+
+// var joke = $.get(response);
+// console.log(response{"value[]":['joke']});
+// $.get( "test.php", { "choices[]": ["Jon", "Susan"] } );
 
