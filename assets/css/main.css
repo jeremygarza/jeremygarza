@@ -3423,6 +3423,7 @@
 				#header nav ul li {
 					display: inline-block;
 					margin-left: 1em;
+
 				}
 
 					#header nav ul li a, #header nav ul li span {
@@ -4202,3 +4203,17 @@ ul.contact {
     text-decoration: none;
     cursor: pointer;
 }*/
+li.chuck{
+  color: black;
+}
+
+.chuck1{
+  color:black;
+  white-space: -webkit-pre-wrap;
+  width: 1000px;
+}
+
+li.chuck1:hover{
+  color: white;
+  display: inline-block;
+}

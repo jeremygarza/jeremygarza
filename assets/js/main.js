@@ -313,30 +313,21 @@
 //     console.log(response)
 
 
-//   var chuck = $.ajax({
-//     url: "http://api.icndb.com/jokes/random?exclude=[explicit]",
-//     dataType: 'jsonp',
-//     success: function(results){
-//         var joke = results.value.joke;
-//         $('#results').append(joke);
-//         console.log(joke);
-//     }
-// });
-
     $(document).ready(function(){
-    $('.chuck').click(function(){
+     var chuck = $('.chuck').click(function(){
         $.getJSON("http://api.icndb.com/jokes/random?exclude=[explicit]",
           function(data){
                 var joke = data.value.joke;
-                $("div").append(joke);
+                $(".chuck1").append(joke);
             });
         });
+      var replaceChuck= $( ".chuck" ).on("click", function() {
+    $( this ).replaceWith('<li class="chuck1" class="hover"></li>');
+    });
 
+  //   $( ".chuck1" ).click(function() {
+  // $( chuck ).click();
+// });
 });
 
-
-
-// var joke = $.get(response);
-// console.log(response{"value[]":['joke']});
-// $.get( "test.php", { "choices[]": ["Jon", "Susan"] } );
 
