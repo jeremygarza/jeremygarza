@@ -300,34 +300,15 @@
 
 })(jQuery);
 
-// var response = $.ajax({
-//       method: "GET",
-//       url: "http://api.icndb.com/jokes/random?exclude=[explicit]",
-//       value: "type",
-
-//     })
-//       .done(function(value) {
-//         // console.log({response});
-//         return (value)
-//       });
-//     console.log(response)
-
 
     $(document).ready(function(){
      var chuck = $('.chuck').click(function(){
         $.getJSON("http://api.icndb.com/jokes/random?exclude=[explicit]",
           function(data){
                 var joke = data.value.joke;
-                $(".chuck1").append(joke);
+                $(".chuck1").text(joke);
             });
-        });
-      var replaceChuck= $( ".chuck" ).on("click", function() {
-    $( this ).replaceWith('<li class="chuck1" class="hover"></li>');
     });
-
-  //   $( ".chuck1" ).click(function() {
-  // $( chuck ).click();
-// });
 });
 
 
