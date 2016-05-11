@@ -2460,7 +2460,7 @@
 	}
 
 	header.major {
-		margin: 0 0 4em 0;
+		margin: 0 auto;
 		position: relative;
 		text-align: center;
 	}
@@ -2479,14 +2479,19 @@
 	}
 
 /* Form */
-
+.inner{
+  margin-left: 15px;
+  text-align: left;
+}
   form {
     margin: 0 0 2em 0;
-    width: 900px;
+    width: 700px;
+    box-sizing: border-box;
   }
 
     form .field {
       margin: 0 0 1em 0;
+      /*margin-left: 10px;*/
     }
 
       form .field.half {
@@ -2527,9 +2532,8 @@
   }
 
   input[type="text"],
-  input[type="password"],
   input[type="email"],
-  input[type="tel"],
+  input[type="message"],
   select,
   textarea {
     -moz-appearance: none;
@@ -2549,18 +2553,16 @@
   }
 
     input[type="text"]:invalid,
-    input[type="password"]:invalid,
     input[type="email"]:invalid,
-    input[type="tel"]:invalid,
+    input[type="message"]:invalid,
     select:invalid,
     textarea:invalid {
       box-shadow: none;
     }
 
     input[type="text"]:focus,
-    input[type="password"]:focus,
+    input[type="message"]:focus,
     input[type="email"]:focus,
-    input[type="tel"]:focus,
     select:focus,
     textarea:focus {
       border-color: #ffffff;
@@ -4145,6 +4147,10 @@
 			header.major {
 				margin: 0 0 2em 0;
 			}
+
+      header.major .second{
+        margin: 0 auto;
+      }
 
 		/* Goto Next */
 
